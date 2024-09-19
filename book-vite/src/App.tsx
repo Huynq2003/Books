@@ -23,23 +23,23 @@ const App: React.FC = () => {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path='/login' element={<RouteSignIn />}>
+          <Route path='/Books/login' element={<RouteSignIn />}>
             <Route path='login' element={<Login url={`login`} />} />
           </Route>
-          <Route path='/register' element={<RouteRegister />}>
+          <Route path='/Books/register' element={<RouteRegister />}>
             <Route path='register' element={<Register url={`register`} />} />
           </Route>
-          <Route path="/" element={<DefaultLayout />}>
+          <Route path="/Books" element={<DefaultLayout />}>
             <Route index element={<Home />} />
-            <Route path="/books/:id" element={<BookPage />} />
-            <Route path="/books/grade/:grade/subject/:subject" element={<FilteredBooksPage />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/order-confirmation" element={<OrderConfirmation />} />
-            <Route path="/cancel-order" element={<CancelOrder />} />
+            <Route path="/Books/:id" element={<BookPage />} />
+            <Route path="/Books/grade/:grade/subject/:subject" element={<FilteredBooksPage />} />
+            <Route path="/Books/cart" element={<Cart />} />
+            <Route path="/Books/checkout" element={<Checkout />} />
+            <Route path="/Books/order-confirmation" element={<OrderConfirmation />} />
+            <Route path="/Books/cancel-order" element={<CancelOrder />} />
           </Route>
           <Route path='/adminpage' element={<AdminLayout />}>
-            <Route path="/adminpage/admin" element={<AdminPage />} />
+            <Route path="/Books/adminpage/admin" element={<AdminPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
