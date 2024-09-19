@@ -110,7 +110,7 @@ function Login({ url }: { url: string }) {
                     </button>
                 </form>
                 <p className="mt-4 text-center">
-                    Don't have an account? <Link to={`/Books/register`} className="text-blue-500 hover:text-blue-400">Register</Link>
+                    Don't have an account? <Link to={`/register`} className="text-blue-500 hover:text-blue-400">Register</Link>
                 </p>
             </div>
         </div>

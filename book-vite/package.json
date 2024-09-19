@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Huynq2003.github.io/Books/",
+  "homepage": "https://huynq2003.github.io/Books",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
