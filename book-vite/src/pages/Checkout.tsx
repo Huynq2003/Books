@@ -69,7 +69,7 @@ const Checkout: React.FC = () => {
     }));
 
     // Chuyển hướng đến trang xác nhận đơn hàng
-    navigate('/Book/order-confirmation');
+    navigate('/Books/order-confirmation');
     setIsConfirmationModalVisible(false);
     setIsModalVisible(false);
   };

@@ -80,7 +80,7 @@ const BookDetail: React.FC = () => {
         </div>
         <div className="flex-1 p-6">
           <div className="mb-4 text-base flex items-center">
-            <Link to="/" className="text-blue-600">Trang chủ</Link>
+            <Link to="/Books/" className="text-blue-600">Trang chủ</Link>
             <IoHome className="mx-2" />
             <span className="text-gray-400 mx-2">|</span>
             <p>Sách Giáo Khoa</p>

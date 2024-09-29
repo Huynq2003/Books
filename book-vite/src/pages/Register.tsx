@@ -34,7 +34,7 @@ function Register({ url }: { url: string }) {
         localStorage.setItem("user", JSON.stringify(user));
         setSuccessMessage("Registration successful! You can now log in.");
         setTimeout(() => {
-            navigate("/Book/login");
+            navigate("/Books/login");
         }, 2000);
     };
 
@@ -112,7 +112,7 @@ function Register({ url }: { url: string }) {
                     </button>
                 </form>
                 <p className="mt-4 text-center">
-                    Already have an account? <Link to={`/Book/login`} className="text-blue-500 hover:text-blue-400">Login</Link>
+                    Already have an account? <Link to={`/Books/login`} className="text-blue-500 hover:text-blue-400">Login</Link>
                 </p>
             </div>
         </div>

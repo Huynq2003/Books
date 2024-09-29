@@ -23,23 +23,23 @@ const App: React.FC = () => {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path='/Book/login' element={<RouteSignIn />}>
+          <Route path='/Books/login' element={<RouteSignIn />}>
             <Route path='login' element={<Login url={`login`} />} />
           </Route>
-          <Route path='/Book/register' element={<RouteRegister />}>
+          <Route path='/Books/register' element={<RouteRegister />}>
             <Route path='register' element={<Register url={`register`} />} />
           </Route>
-          <Route path="/Book/" element={<DefaultLayout />}>
+          <Route path="/Books/" element={<DefaultLayout />}>
             <Route index element={<Home />} />
-            <Route path="/Book/books/:id" element={<BookPage />} />
-            <Route path="/Book/books/grade/:grade/subject/:subject" element={<FilteredBooksPage />} />
-            <Route path="/Book/cart" element={<Cart />} />
-            <Route path="/Book/checkout" element={<Checkout />} />
-            <Route path="/Book/order-confirmation" element={<OrderConfirmation />} />
-            <Route path="/Book/cancel-order" element={<CancelOrder />} />
+            <Route path="/Books/books/:id" element={<BookPage />} />
+            <Route path="/Books/books/grade/:grade/subject/:subject" element={<FilteredBooksPage />} />
+            <Route path="/Books/cart" element={<Cart />} />
+            <Route path="/Books/checkout" element={<Checkout />} />
+            <Route path="/Books/order-confirmation" element={<OrderConfirmation />} />
+            <Route path="/Books/cancel-order" element={<CancelOrder />} />
           </Route>
-          <Route path='/Book/adminpage' element={<AdminLayout />}>
-            <Route path="/Book/adminpage/admin" element={<AdminPage />} />
+          <Route path='/Books/adminpage' element={<AdminLayout />}>
+            <Route path="/Books/adminpage/admin" element={<AdminPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
