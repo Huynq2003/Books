@@ -29,7 +29,7 @@ const Cart: React.FC = () => {
   };
 
   const handleCheckout = () => {
-    navigate('/checkout', { state: { selectedItems: cartItems.filter(item => selectedItems.includes(item.id)) } });
+    navigate('/Book/checkout', { state: { selectedItems: cartItems.filter(item => selectedItems.includes(item.id)) } });
   };
 
   return (

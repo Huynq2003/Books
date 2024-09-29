@@ -23,21 +23,21 @@ const Header: React.FC = () => {
           setUser(parsedUser);
         } else {
           console.warn('User data is missing the name property.'); // Debugging line
-          navigate("/login");
+          navigate("/Book/login");
         }
       } catch (error) {
         console.error('Error parsing user data:', error); // Debugging line
-        navigate("/login");
+        navigate("/Book/login");
       }
     } else {
-      navigate("/login");
+      navigate("/Book/login");
     }
   }, [navigate]);
 
   const handleLogout = () => {
     localStorage.removeItem("user");
     setUser(null);
-    navigate("/login");
+    navigate("/Book/login");
   };
   const [showArrow, setShowArrow] = useState(false);
 
@@ -71,10 +71,10 @@ const Header: React.FC = () => {
   const userMenu = (
     <Menu>
       <Menu.Item>
-        <Link to="/profile">Thông tin tài khoản</Link>
+        <Link to="/Book/profile">Thông tin tài khoản</Link>
       </Menu.Item>
       <Menu.Item>
-        <Link to="/order-confirmation">Đơn hàng của tôi</Link>
+        <Link to="/Book/order-confirmation">Đơn hàng của tôi</Link>
       </Menu.Item>
       <Menu.Item onClick={handleLogout}>
         Đăng xuất
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
     <header className="bg-white  border-2 p-4">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className='flex flex-col items-center'>
+        <Link to="/Book/" className='flex flex-col items-center'>
           <img src="https://png.pngtree.com/png-vector/20240712/ourmid/pngtree-book-and-education-logo-vector-png-image_13061759.png" alt="Logo" height={80} width={80} />
           <span className="ml-2 text-3xl font-extrabold text-purple-600">
             {['H', 'U', 'Y', ' ', 'B', 'O', 'O', 'K', 'S'].map((letter, index) => (
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
           />
         </div>
         <div className="flex items-center space-x-4">
-          <Link to="/cart">
+          <Link to="/Book/cart">
             <Badge count={cartItems.length} showZero>
               <ShoppingCartOutlined style={{ fontSize: '24px' }} />
             </Badge>
@@ -126,7 +126,7 @@ const Header: React.FC = () => {
               </Button>
             </Dropdown>
           ) : (
-            <Link to="/login">
+            <Link to="/Book/login">
               <Button icon={<UserOutlined />} type="text">Login</Button>
             </Link>
           )}

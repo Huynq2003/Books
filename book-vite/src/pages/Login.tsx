@@ -33,7 +33,7 @@ function Login({ url }: { url: string }) {
         if (email === adminEmail && password === adminPassword) {
             setSuccessMessage("Admin login successful!");
             setTimeout(() => {
-                navigate("/adminpage/admin"); // Redirect to admin dashboard
+                navigate("/Book/adminpage/admin"); // Redirect to admin dashboard
             }, 2000);
             return;
         }
@@ -45,7 +45,7 @@ function Login({ url }: { url: string }) {
             if (user.email === email && user.password === password) {
                 setSuccessMessage("Login successful!");
                 setTimeout(() => {
-                    navigate("/"); // Redirect to user home page
+                    navigate("/Book/"); // Redirect to user home page
                 }, 2000);
             } else {
                 setSuccessMessage("Invalid email or password.");
@@ -110,7 +110,7 @@ function Login({ url }: { url: string }) {
                     </button>
                 </form>
                 <p className="mt-4 text-center">
-                    Don't have an account? <Link to={`/register`} className="text-blue-500 hover:text-blue-400">Register</Link>
+                    Don't have an account? <Link to={`/Book/register`} className="text-blue-500 hover:text-blue-400">Register</Link>
                 </p>
             </div>
         </div>

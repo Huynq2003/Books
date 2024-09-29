@@ -28,7 +28,7 @@ const BookCategory: React.FC = () => {
                   className="hover:bg-gray-100"
                 >
                   <Link
-                    to={`/books/grade/${category.id}/subject/${encodeURIComponent(subject.toLowerCase())}`}
+                    to={`/Book/books/grade/${category.id}/subject/${encodeURIComponent(subject.toLowerCase())}`}
                     className="text-blue-600 hover:underline"
                   >
                     Sách {subject}

@@ -10,7 +10,7 @@ const CartButton: React.FC = () => {
 
   return (
     <div className='mt-9'>
-      <Link to="/cart">
+      <Link to="/Book/cart">
         <Badge count={cartItems.length} showZero>
           <Button type="primary" icon={<FaShoppingCart />}>
             Giỏ hàng

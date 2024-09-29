@@ -42,7 +42,7 @@ const CancelOrder: React.FC = () => {
         <p>Bạn có chắc chắn muốn hủy đơn hàng này không?</p>
       </Modal>
 
-      <Link to="/" className="text-blue-500 hover:underline mt-4 block">Quay lại trang chủ</Link>
+      <Link to="/Book/" className="text-blue-500 hover:underline mt-4 block">Quay lại trang chủ</Link>
     </div>
   );
 };

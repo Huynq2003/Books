@@ -81,7 +81,7 @@ const FilteredBooksPage: React.FC = () => {
                     <p className="text-base font-semibold text-red-600 mt-2">{book.price} VND</p>
                   </div>
                   <div className="mt-4">
-                    <Link to={`/books/${book.id}`} className="text-blue-500 hover:underline">
+                    <Link to={`/Book/books/${book.id}`} className="text-blue-500 hover:underline">
                       Xem chi tiết
                     </Link>
                   </div>

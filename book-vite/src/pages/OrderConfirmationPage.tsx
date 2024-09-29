@@ -95,8 +95,8 @@ const OrderConfirmation: React.FC = () => {
         </div>
       </div>
       <div className="mt-4">
-        <Link to="/" className="text-blue-500 hover:underline">Quay lại trang chủ</Link>
-        <Link to="/cancel-order" className="ml-4 text-red-500 hover:underline">Hủy đơn hàng</Link>
+        <Link to="/Book/" className="text-blue-500 hover:underline">Quay lại trang chủ</Link>
+        <Link to="/Book/cancel-order" className="ml-4 text-red-500 hover:underline">Hủy đơn hàng</Link>
       </div>
     </div>
   );
